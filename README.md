@@ -11,7 +11,7 @@ A small interval timer app.
 # functionality
 1. User can increment or decrement the number of intervals he wants to do. It defaults to one.
 2. User can increment or decrement the duration of each training session by one minute, it defaults to one minute(the minimum allowed time).
-3. User can increment or decrement the duration of each training session IF he is doing more than one interval, because **it automatically skips the break duration if it ended the training session in the last round**.
+3. User can increment or decrement the duration of each break session IF he is doing more than one interval, because **it automatically skips the break duration if it ended the training session in the last round**.
 4. User can start the counter by pressing the play icon. By pressing the play icon he is automatically disabling all the buttons for incrementing or decrementing the intervals,breaks or training sessions.
 5. User can pause the counter, after clicking on play again he can resume it from where it paused.
 6. User can stop the counter, which will reset the timer, but not all the settings.
