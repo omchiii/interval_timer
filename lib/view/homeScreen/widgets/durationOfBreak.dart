@@ -9,37 +9,36 @@ class DurationOfBreak extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Padding(
-        padding: EdgeInsets.only(top: SizeConfig.blockSizeVertical * 5),
-        child: Column(
-          children: [
-            Text("Duration of each Break"),
-            SizedBox(
-              height: SizeConfig.blockSizeVertical * 3,
-            ),
-            Text(
-              "${context.select((TimerProvider t) => t.durationOfBreakMMSS())}",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                CircularButton(
-                  icon: Icons.add,
-                  onPressed: () {
-                    context.read<TimerProvider>().incrementBreakTime();
-                  },
-                ),
-                CircularButton(
-                  icon: Icons.remove,
-                  onPressed: () {
-                    context.read<TimerProvider>().decrementBreakTime();
-                  },
-                ),
-              ],
-            )
-          ],
-        ),
+      child: Column(
+        children: [
+          Text("Duration of each Break"),
+          SizedBox(
+            height: SizeConfig.blockSizeVertical * 3,
+          ),
+          Text(
+            "${context.select((TimerProvider t) => t.durationOfBreakMMSS())}",
+            style: TextStyle(
+                fontSize: SizeConfig.safeBlockHorizontal * 5,
+                fontWeight: FontWeight.bold),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CircularButton(
+                icon: Icons.add,
+                onPressed: () {
+                  context.read<TimerProvider>().incrementBreakTime();
+                },
+              ),
+              CircularButton(
+                icon: Icons.remove,
+                onPressed: () {
+                  context.read<TimerProvider>().decrementBreakTime();
+                },
+              ),
+            ],
+          )
+        ],
       ),
     );
   }

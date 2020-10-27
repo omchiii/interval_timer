@@ -17,6 +17,7 @@ class HomeScreen extends StatelessWidget {
             NumberOfIntervals(),
             DurationOfTraining(),
             DurationOfBreak(),
+            Spacer(),
             Timer(),
             Quote()
           ],

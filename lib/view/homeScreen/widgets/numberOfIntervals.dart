@@ -19,7 +19,9 @@ class NumberOfIntervals extends StatelessWidget {
             ),
             Text(
               "${context.select((TimerProvider t) => t.numOfIntervals)}",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  fontSize: SizeConfig.safeBlockHorizontal * 5,
+                  fontWeight: FontWeight.bold),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,

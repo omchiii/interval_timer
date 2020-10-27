@@ -19,6 +19,7 @@ class _QuoteState extends State<Quote> {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(top: SizeConfig.blockSizeVertical * 2),
+      margin: EdgeInsets.only(bottom: SizeConfig.blockSizeVertical * 4),
       child: Text(
         '${context.select((QuoteProvider q) => q.quote)}',
         style: TextStyle(

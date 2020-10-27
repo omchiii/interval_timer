@@ -34,7 +34,9 @@ class Timer extends StatelessWidget {
             ),
             Text(
               "${context.select((TimerProvider t) => t.timerDurationMMSS())}",
-              style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  fontSize: SizeConfig.safeBlockHorizontal * 7,
+                  fontWeight: FontWeight.bold),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
